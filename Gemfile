@@ -21,11 +21,17 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# Add haml gem for writing haml code
 gem 'haml', '~> 4.0.5'
+# Add simple_form to create forms
 gem 'simple_form', '~> 3.0.2'
+# Add devise for user registrations
 gem 'devise', '~> 3'
+# Add acts_as_votable for voting technique
 gem 'acts_as_votable', '~> 0.10.0'
+# Add paperclip for image upload
 gem 'paperclip', '~> 4.2.0'
+# Add font-awesome-rails for emoticons
 gem "font-awesome-rails"
 
 group :development, :test do
