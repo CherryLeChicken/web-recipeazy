@@ -7,6 +7,9 @@ body {
 	font-weight: 100;
 }
 
+h1 {
+  padding-left: 80px;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
@@ -104,4 +107,4 @@ p {
 @import 'home.css.scss';
 @import 'posts.css.scss';
 @import 'font-awesome';
-@import "semantic-ui";
+@import 'bootstrap';

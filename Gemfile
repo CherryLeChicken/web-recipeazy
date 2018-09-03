@@ -32,7 +32,8 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'paperclip', '~> 4.2.0'
 # Add font-awesome-rails for emoticons
 gem "font-awesome-rails"
-gem 'semantic-ui-sass'
+gem 'bootstrap'
+gem 'jquery-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
