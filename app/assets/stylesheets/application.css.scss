@@ -97,6 +97,10 @@ label {
   padding-top: 25px !important;
 }
 
+p {
+  padding: auto;
+}
+
 @import 'home.css.scss';
 @import 'posts.css.scss';
 @import 'font-awesome';

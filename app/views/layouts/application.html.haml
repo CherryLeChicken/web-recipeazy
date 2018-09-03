@@ -9,30 +9,41 @@
 	
 	= csrf_meta_tags
 %body
-	%header
-		.wrapper.clearfix
-			#logo= link_to "Recipeazy", root_path
-			%nav
-				- if user_signed_in?
-					= link_to root_path do
-						%i.fa.fa-home
-						Home
-					= link_to about_path do
-						%i.fa.fa-book
-						About Us
-					= link_to edit_user_registration_path do
-						%i.fa.fa-cog
-						Settings
-					= link_to new_post_path, class: "button" do
-						%i.fa.fa-plus
-						Add Recipe
-					= link_to destroy_user_session_path, class:"button", method: :delete do
-						%i.fa.fa-sign-out
-						Sign Out
-				- else
-					= link_to "Log In", new_user_session_path, class: "button"
-					= link_to "Sign Up", new_user_registration_path, class: "button"
-				
+	%div.ui.fixed.inverted.main.menu
+		%div.ui.container
+			%a.launch.icon.item
+				%i.content.icon
+			.wrapper.clearfix
+				%div.brand.item
+					#logo= link_to "Recipeazy", root_path
+					%nav
+					- if user_signed_in?
+						%div.item
+							= link_to root_path do
+								%i.fa.fa-home
+								Home
+						%div.item
+							= link_to about_path do
+								%i.fa.fa-book
+								About Us
+						%div.item
+							= link_to edit_user_registration_path do
+								%i.fa.fa-cog
+								Settings
+						%div.item
+							= link_to new_post_path, class: "button" do
+								%i.fa.fa-plus
+								Add Recipe
+						%div.item
+							= link_to destroy_user_session_path, class:"button", method: :delete do
+								%i.fa.fa-sign-out
+								Sign Out
+					- else
+						%item
+							= link_to "Log In", new_user_session_path, class: "button"
+						%item
+							= link_to "Sign Up", new_user_registration_path, class: "button"
+					
 	%p.notice= notice
 	%p.alert= alert
 	.wrapper

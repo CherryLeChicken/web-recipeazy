@@ -13,19 +13,19 @@
     <% end %>
 
     <%= f.input :password, autocomplete: "off", required: false %>
-    <p>Leave it blank if you would not like to change.</p>
+    <p>Leave the password and password confirmation if you would not like to change them.</p>
     <%= f.input :password_confirmation, required: false %>
     <%= f.input :current_password, required: true %>
     <p>We need your current password to confirm your changes.</p>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Update" %>
+    <%= f.button :submit, "Update", class: "ui secondary basic button" %>
   </div>
 <% end %>
 <br>
 
 <h3>Cancel account</h3>
 
-<p>Unhappy? <%= link_to "Cancel account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Unhappy? <%= link_to "Cancel account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %> </p>
 
