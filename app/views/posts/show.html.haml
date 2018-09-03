@@ -42,10 +42,22 @@
 								%span
 									%i.fa.fa-thumbs-o-up
 									= @random_post.get_likes.size
+%h3 Share with:
+%button.ui.facebook.button
+	%i.facebook.icon
+	Facebook
 
+%button.ui.twitter.button
+	%i.twitter.icon
+	Twitter
+%button.ui.google.plus.button
+	%i.google.plus.icon
+	Google Plus
+	
+%br
 
 #comments
-	%h2.comment_count= pluralize(@post.comments.count, "Comment")
+	%h3.comment_count= pluralize(@post.comments.count, "Comment")
 	- @comments.each do |comment|
 		.comment
 			%p.username= comment.user.name
