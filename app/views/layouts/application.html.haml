@@ -14,11 +14,21 @@
 			#logo= link_to "Recipeazy", root_path
 			%nav
 				- if user_signed_in?
-					= link_to "Home", root_path
-					= link_to "About Us", about_path
-					= link_to "Settings", edit_user_registration_path
-					= link_to "Add New Recipe", new_post_path, class: "button"
-					= link_to "Sign Out", destroy_user_session_path, class:"button", method: :delete
+					= link_to root_path do
+						%i.fa.fa-home
+						Home
+					= link_to about_path do
+						%i.fa.fa-book
+						About Us
+					= link_to edit_user_registration_path do
+						%i.fa.fa-cog
+						Settings
+					= link_to new_post_path, class: "button" do
+						%i.fa.fa-plus
+						Add Recipe
+					= link_to destroy_user_session_path, class:"button", method: :delete do
+						%i.fa.fa-sign-out
+						Sign Out
 				- else
 					= link_to "Log In", new_user_session_path
 					= link_to "Sign Up", new_user_registration_path, class: "button"
