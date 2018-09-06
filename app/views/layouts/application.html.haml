@@ -15,7 +15,7 @@
 				.navbar-header
 					.navbar-brand
 						%i.fa.fa-bars.icon-bars{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
-						= link_to "Recipeazy", root_path, style: "color: #D3D3D3;"
+						= link_to "Recipeazy", root_path, style: "color: #696969;"
 				
 				.collapse.navbar-collapse.navbar-collapse
 					%ul.navbar-nav.navbar-right
@@ -26,22 +26,23 @@
 									%i.fa.fa-home
 								%li.nav-item
 									= link_to "About Us ", about_path
-									%i.fa.fa-book
+									%i.fa.fa-info-circle
 								%li.nav-item
 									= link_to "Settings", edit_user_registration_path
 									%i.fa.fa-cog
 								%li.nav-item
 									= link_to "Add New Recipe", new_post_path
-									%i.fa.fa-plus
+									%i.fa.fa-plus-circle
 								%li.nav-item
 									= link_to "Sign Out", destroy_user_session_path, method: :delete
 									%i.fa.fa-sign-out
 							- else
 								%li.nav-item
 									= link_to "Log In", new_user_session_path
+									%i.fa.fa-sign-in
 								%li.nav-item
 									= link_to "Sign Up", new_user_registration_path
-
+									%i.fa.fa-user-plus
 	%p.notice= notice
 	%p.alert= alert
 	.wrapper

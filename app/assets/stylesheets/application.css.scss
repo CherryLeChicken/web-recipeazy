@@ -34,9 +34,7 @@ body {
 	font-weight: 100;
 }
 
-h1 {
-  padding-left: 80px;
-}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
@@ -112,7 +110,13 @@ p {
   white-space: nowrap;
   text-align: center;
   color: grey;
-  font-size: 24px;
+  font-size: 28px;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: #708090;
+    }
+  }
 }
 
 .navbar-items {
