@@ -20,7 +20,7 @@ html, body {
 
 .menu {
   margin: 0 30px 0 0;
-}
+}s
 
 .navbar-items a {
   text-decoration: none;
@@ -106,48 +106,55 @@ p {
   padding: auto;
 }
 
-.navbar-brand {
-  white-space: nowrap;
-  text-align: center;
-  color: grey;
-  font-size: 28px;
-  a {
-    &:hover {
-      text-decoration: none;
-      color: #708090;
-    }
-  }
-}
 
-.navbar-items {
-  color: #D3D3D3;
-}
+
 i {
   padding: 5px;
 }
 
-    body{
-    //GLOBAL STYLES
+//IF ON COMPUTER:
+.navbar-items {
+  display: none;
+  color: #D3D3D3;
+}
 
-      @media only screen and (max-width: 770px){
-          //MOBILE ONLY STYLES
-          
-      }
-  
-      @media only screen and (min-width:771px) and (max-width:1040px){
-          //TABLET ONLY STYLES
-          .navbar-header {
-            display:none;
-          }
-          
-          .navbar-items{
-            display: none;
-          }
+.fa-bars {
+  display: none;
+}
+
+.navbar-brand {
+  display: none;
+}
+
         
-      }
-
-
+//IF ON MOBILE    
+body{
+  @media only screen and (max-width:1040px){
+    //MEDIA QUERY
+    
+    .computer {
+      display: none;
     }
+    .navbar-items {
+      display: inline-block;
+    }
+    .fa-bars {
+      display: inline-block;
+    }
+    .navbar-brand {
+      white-space: nowrap;
+      text-align: center;
+      color: grey;
+      font-size: 28px;
+      a {
+        &:hover {
+          text-decoration: none;
+          color: #708090;
+        }
+      }
+    }
+  }
+}
     
 @import 'home.css.scss';
 @import 'posts.css.scss';
