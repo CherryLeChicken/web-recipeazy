@@ -2,6 +2,33 @@
  *= require_self
  */
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.nav {
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  color: 	#707070;
+  &:hover {
+				color: #6d6969;
+				text-decoration: none;
+  }
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: gray;
+  line-height: 70px;
+}
+
+
 body {
 	font-family: "Proxima Nova";
 	font-weight: 100;
@@ -19,14 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
 
 .button {
 	border: 1px solid #9B9B9B;
@@ -45,22 +64,11 @@ header {
 		float: left;
 		font-size: 1.75rem;
 		a {
-			color: #333233;
+			color: #D3D3D3;
 			text-decoration: none;
 			&:hover {
 				color: #6d6969;
-			}
-		}
-	}
-	nav {
-		float: left;
-		a {
-			margin-left: 1.5rem;
-			line-height: 2;
-			color: #9B9B9B;
-			text-decoration: none;
-			&:hover {
-				color: #000000;
+				text-decoration: none;
 			}
 		}
 	}
@@ -85,10 +93,6 @@ input {
 text {
   border-radius: 4px;
 }
-label {
-  padding-right: 5px;
-  padding-left: 3px;
-}
 
 .notice, .alert {
   padding-left: 125px;
@@ -104,6 +108,43 @@ p {
   padding: auto;
 }
 
+.navbar-brand {
+  white-space: nowrap;
+  text-align: center;
+  color: grey;
+  font-size: 24px;
+}
+
+.navbar-items {
+  color: #D3D3D3;
+}
+i {
+  padding: 5px;
+}
+
+    body{
+    //GLOBAL STYLES
+
+      @media only screen and (max-width: 770px){
+          //MOBILE ONLY STYLES
+          
+      }
+  
+      @media only screen and (min-width:771px) and (max-width:1040px){
+          //TABLET ONLY STYLES
+          .navbar-header {
+            display:none;
+          }
+          
+          .navbar-items{
+            display: none;
+          }
+        
+      }
+
+
+    }
+    
 @import 'home.css.scss';
 @import 'posts.css.scss';
 @import 'font-awesome';
