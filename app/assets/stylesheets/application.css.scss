@@ -122,16 +122,25 @@ i {
   display: none;
 }
 
-.navbar-brand {
+.mobile {
   display: none;
 }
 
+.computer {
+  display: inline-block;
+}
+
+div .float-right {
+  float: right;
+}
         
 //IF ON MOBILE    
 body{
   @media only screen and (max-width:1040px){
     //MEDIA QUERY
-    
+    .mobile {
+      display: inline-block;
+    }
     .computer {
       display: none;
     }
