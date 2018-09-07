@@ -20,14 +20,24 @@ html, body {
 
 .menu {
   margin: 0 30px 0 0;
-}s
+}
 
 .navbar-items a {
   text-decoration: none;
   color: gray;
   line-height: 70px;
+  font-size: 24px;
 }
 
+div .float-right a {
+  font-size: 16px;
+  text-decoration: none;
+  color: gray;
+    &:hover {
+			color: #6d6969;
+			text-decoration: none;
+    }
+}
 
 body {
 	font-family: "Proxima Nova";
@@ -105,7 +115,6 @@ text {
 p {
   padding: auto;
 }
-
 
 
 i {
