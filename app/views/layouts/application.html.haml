@@ -22,26 +22,26 @@
 						- if user_signed_in?
 							%li.nav-item
 								= link_to "Home", root_path
-								%i.fa.fa-home
+								%i.fa.fa-home.fa-lg
 							%li.nav-item
 								= link_to "About", about_path
-								%i.fa.fa-info-circle
+								%i.fa.fa-info-circle.fa-lg
 							%li.nav-item
 								= link_to "Settings", edit_user_registration_path
-								%i.fa.fa-cog
+								%i.fa.fa-cog.fa-lg
 							%li.nav-item
 								= link_to "New", new_post_path
-								%i.fa.fa-plus-circle
+								%i.fa.fa-plus-circle.fa-lg
 							%li.nav-item
 								= link_to "Sign Out", destroy_user_session_path, method: :delete
-								%i.fa.fa-sign-out
+								%i.fa.fa-sign-out.fa-lg
 						- else
 							%li.nav-item
 								= link_to "Log In", new_user_session_path
-								%i.fa.fa-sign-in
+								%i.fa.fa-sign-in.fa-lg
 							%li.nav-item
 								= link_to "Sign Up", new_user_registration_path
-								%i.fa.fa-user-plus
+								%i.fa.fa-user-plus.fa-lg
 								
 			//IF ON COMPUTER
 			.computer

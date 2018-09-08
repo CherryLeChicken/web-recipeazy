@@ -27,6 +27,17 @@ html, body {
   color: gray;
   line-height: 70px;
   font-size: 24px;
+    &:hover {
+	    color: #6d6969;
+	    text-decoration: none;
+    }
+}
+
+a {
+  &:hover {
+	  color: #6d6969;
+	  text-decoration: none;
+  }
 }
 
 div .float-right a {
@@ -54,6 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
+.help-inline {
+  padding-left: 10px;
+}
 
 .button {
 	border: 1px solid #9B9B9B;
@@ -79,6 +93,13 @@ header {
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+.nav-item {
+  &:hover {
+		color: #6d6969;
+		text-decoration: none;
 	}
 }
 
@@ -142,6 +163,7 @@ i {
 div .float-right {
   float: right;
 }
+        
         
 //IF ON MOBILE    
 body{
