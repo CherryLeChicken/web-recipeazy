@@ -9,6 +9,10 @@
 		.post_image_description
 			= image_tag @post.image.url(:medium)
 			.description= simple_format(@post.description)
+			%h6 Notes:
+			.notes= simple_format(@post.notes)
+			%h6 Price:
+			
 		.post_data
 			= link_to "Visit Link", @post.link, class: "button", target: "_blank"
 			= link_to like_post_path(@post), method: :get, class: "data" do
@@ -31,6 +35,7 @@
 					.post_content
 						.title
 							%h2= link_to @random_post.title, post_path(@random_post)
+						
 						.data.clearfix
 							%p.username
 								Share by
