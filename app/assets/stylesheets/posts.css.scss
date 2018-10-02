@@ -5,6 +5,7 @@
 		float: left;
 		margin-right: 5%;
 	}
+
 	.post_data {
 		width: 15%;
 		float: left;
@@ -33,6 +34,7 @@
 	}
 #random_post {
 		width: 25%;
+		height: 30%;
 		margin-left: 5%;
 		margin-top: -3.2rem;
 		float: left;
@@ -55,8 +57,6 @@
 				h2 {
 					margin: 0;
 					font-weight: 100;
-					padding: 1rem 5%;
-					border-bottom: 1px solid #E4E4E4;
 					font-size: 1.25rem;
 					a {
 						text-decoration: none;
@@ -103,6 +103,14 @@
 		font-size: 1.1rem;
 		line-height: 1.5;
 		color: #969696;
+	}
+}
+
+.title a {
+	color: black;
+	&:hover {
+		text-decoration: none;
+		color: grey;
 	}
 }
 
