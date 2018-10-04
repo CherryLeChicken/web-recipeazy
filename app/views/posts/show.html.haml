@@ -11,9 +11,7 @@
 			.description= simple_format(@post.description)
 			%h6 Notes:
 			.notes= simple_format(@post.notes)
-			%h6 Price:
-			%span.input-group-addon $
-			.price= (@post.price)
+			%h5 Price: $#{@post.price}
 
 		.post_data
 			= link_to "Visit Link", @post.link, class: "button", target: "_blank"
@@ -32,7 +30,7 @@
 		
 		
 		#random_post
-			%h3 Check this out
+			%h3 Check this out!
 			.post	
 				.post_image 
 					= link_to (image_tag @random_post.image.url(:small)), post_path(@random_post)
