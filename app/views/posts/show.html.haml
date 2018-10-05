@@ -49,12 +49,13 @@
 						%i.fa.fa-thumbs-o-up
 						= @random_post.get_likes.size
 
-
+%br
 #comments
 	%h2.comment_count= pluralize(@post.comments.count, "Comment")
 	- @comments.each do |comment|
 		.comment
 			%p.username= comment.user.name
 			%p.content= comment.content
+%br
 	%h2 Share your opinion:
 	= render "comments/form"
